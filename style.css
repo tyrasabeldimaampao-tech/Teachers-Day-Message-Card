@@ -1,0 +1,187 @@
+/* General Body Styling */
+body {
+  background-color: #b3d9ff; /* Aesthetic light blue background */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Center the content */
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Styling for Heading */
+h2 {
+  animation: 1s blink linear infinite;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Pacifico', cursive; /* Beautiful cursive font */
+  color: #4d79ff; /* Aesthetic blue */
+}
+
+/* Birthday Card Styling */
+.birthdayCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardFront {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 0 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: .6s;
+}
+
+.happy {
+  font-family: 'ChopinScript', cursive;
+  text-align: center;
+  font-size: 28px;
+  margin: 50px;
+  color: #4d79ff; /* Aesthetic blue */
+  transition: .1s;
+}
+
+.image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #4d79ff; /* Aesthetic blue border */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardInside {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 0 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+p {
+  font-family: 'Century Gothic', sans-serif;
+  margin: 10px 20px;
+  color: #555;
+  text-align: justify;
+}
+
+.name {
+  position: absolute;
+  left: 150px;
+  color: #4d79ff; /* Aesthetic blue */
+  text-decoration: underline;
+}
+
+.back {
+  font-family: 'Century Gothic', sans-serif;
+  color: #333;
+  text-align: start;
+  margin: 30px;
+  font-size: 14px;
+  color: #4d79ff; /* Aesthetic blue */
+}
+
+/* Play button styling */
+#playButton {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background-color: #4d79ff; /* Aesthetic blue background */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#playButton:hover {
+  background-color: #3366cc; /* Darker blue */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Hover effect on Birthday Card */
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(7deg);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .happy {
+  visibility: hidden;
+}
+
+/* Blink Animation for Text */
+@keyframes blink {
+  0% {
+    color: #4d79ff; /* Aesthetic blue */
+  }
+
+  20% {
+    color: #6699ff; /* Lighter blue */
+  }
+
+  40% {
+    color: #3366cc; /* Darker blue */
+  }
+
+  60% {
+    color: #99ccff; /* Soft blue */
+  }
+
+  80% {
+    color: #4d79ff;
+  }
+
+  100% {
+    color: #6699ff;
+  }
+}
+
+/* Footer Styling */
+footer {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: #4d79ff; /* Aesthetic blue */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #3366cc; /* Darker blue */
+}
